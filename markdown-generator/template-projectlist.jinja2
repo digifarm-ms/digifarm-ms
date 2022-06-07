@@ -1,0 +1,28 @@
+
+# Awesome Civic Tech Projects
+
+Im Rahmen des Projekts Digifarm.ms wurde eine Liste mit Open-Source-Projekten erstellt, die aus bürgerschaftlichem Engagement entstanden sind.
+Diese Seite listet diese Projekte samt Status und weiteren Informationen.
+
+{% for PROJECT in PROJECTS %}
+----------------------
+
+## {{ PROJECT.Name }}
+
+{{PROJECT.Kurzbeschreibung}}
+
+| Projekt-Ursprung:   | {{PROJECT.Ursprung}} / {{PROJECT.Quelle}} ({{PROJECT.Projektstart}}) |
+| :------------- |:-------------|
+| Technologien: | {{PROJECT.Typ}} mit {{PROJECT.Technologien}} |
+| Kategorie & Lizenz:   | {{PROJECT.Kategorie}} / {{PROJECT.Lizenz}}|
+| Status:   | {% if PROJECT.Status == "Live" %} :heavy_check_mark: {% else %} :x: {% endif%}  {{PROJECT.Status}} {% if PROJECT.Sponsor %}/ Unterstützt von {{PROJECT.Sponsor}} {% endif %}|
+{% if PROJECT["Benötigte Hilfe"] %}| Benötigte Hilfe:  | {{PROJECT["Benötigte Hilfe"]}} |{% endif -%}
+| Quellcode:   | {{PROJECT.Quellcode}} |
+
+{% if PROJECT.Vorschaubild %}
+<img src="images/small/{{PROJECT.Vorschaubild}}" />
+{% endif %}
+
+{% endfor %}
+
+
