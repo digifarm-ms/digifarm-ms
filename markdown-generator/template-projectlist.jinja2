@@ -16,7 +16,7 @@ Diese Seite listet diese Projekte samt Status und weiteren Informationen.
 | Technologien: | {{PROJECT.Typ}} mit {{PROJECT.Technologien}} |
 | Kategorie & Lizenz:   | {{PROJECT.Kategorie}} / {{PROJECT.Lizenz}}|
 | Status:   | {% if PROJECT.Status == "Live" %} :heavy_check_mark: {% else %} :x: {% endif%}  {{PROJECT.Status}} {% if PROJECT.Sponsor %}/ Unterstützt von {{PROJECT.Sponsor}} {% endif %}|
-{% if PROJECT["Benötigte Hilfe"] %}| Benötigte Hilfe:  | {{PROJECT["Benötigte Hilfe"]}} |{% endif -%}
+{% if PROJECT["Benötigte Hilfe"] %}| Benötigte Hilfe:  | {{PROJECT["Benötigte Hilfe"]}} |{% endif %}
 | Quellcode:   | {{PROJECT.Quellcode}} |
 
 {% if PROJECT.Vorschaubild %}
