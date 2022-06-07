@@ -16,7 +16,8 @@ A/B-Street kann dast städtische Straßensystem samt Verkehr simulieren. Es soll
 | Technologien: | interaktive Webseite mit RUST, Cargo, OSM |
 | Kategorie & Lizenz:   | Mobilität / Apache-2.0 license |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Deployment für Münster || Quellcode:   | https://github.com/a-b-street/abstreet |
+| Benötigte Hilfe:  | Deployment für Münster |
+| Quellcode:   | https://github.com/a-b-street/abstreet |
 
 
 
@@ -32,7 +33,8 @@ A/B-Street kann dast städtische Straßensystem samt Verkehr simulieren. Es soll
 | Technologien: | App mit Flutter, Django, Firebase |
 | Kategorie & Lizenz:   | Gesundheit / Creative Commons Public License - CCPL|
 | Status:   |  :x:    |
-| Benötigte Hilfe:  | Klären wie der Stand ist, wie es weiter geht || Quellcode:   | https://github.com/maxluetkemeyer/blood-donation-app |
+| Benötigte Hilfe:  | Klären wie der Stand ist, wie es weiter geht |
+| Quellcode:   | https://github.com/maxluetkemeyer/blood-donation-app |
 
 
 
@@ -48,7 +50,8 @@ Live-Anzeige der aktuellen Positionen aller Stadtwerke-Busse in Münster.
 | Technologien: | Webseite (statisch) mit React, Mapbox GL JS, Deck.gl |
 | Kategorie & Lizenz:   | Mobilität / --|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Weitere Funktionen einbauen || Quellcode:   | https://github.com/codeformuenster/busradar |
+| Benötigte Hilfe:  | Weitere Funktionen einbauen |
+| Quellcode:   | https://github.com/codeformuenster/busradar |
 
 
 <img src="images/small/busradar-ms.png" />
@@ -66,7 +69,8 @@ Das Münster "Zahlen-Quiz" - Ein Münsterhack-Teilnehmer-Team hat dieses kurzwei
 | Technologien: | Webseite (statisch) mit Flutter |
 | Kategorie & Lizenz:   | Unterhaltung / MIT License|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Weitere Quizfragen eingeben bzw. einbauen || Quellcode:   | https://gitlab.com/data-inspire-me/data-inspire-me |
+| Benötigte Hilfe:  | Weitere Quizfragen eingeben bzw. einbauen |
+| Quellcode:   | https://gitlab.com/data-inspire-me/data-inspire-me |
 
 
 <img src="images/small/data-inspire-me.png" />
@@ -84,7 +88,8 @@ Die moderne Art ein Datenportal darzustellen: Pro Datensatz wird eine Wabe darge
 | Technologien: | Alternatives Datenportal mit JavaScript, PHP, CSS, HTML, APIs |
 | Kategorie & Lizenz:   | Demokratie, Politik / MIT License|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Die Community müsste unterstützt werden, um Zeit und Raum zu haben, um neue Ideen zu entwickeln – oder ausreichend Interesse und Kreativität der Plattformbetreiber könnte zu neuen Ideen führen. Außerdem fehlt eine vollständige Dokumentation sowie ein Automatismus. Die Plattform kann zwar mit mehreren Metadatenformaten arbeiten, aber eine Standardisierung fehlt. || Quellcode:   | https://github.com/tursics/data-dashboard |
+| Benötigte Hilfe:  | Die Community müsste unterstützt werden, um Zeit und Raum zu haben, um neue Ideen zu entwickeln – oder ausreichend Interesse und Kreativität der Plattformbetreiber könnte zu neuen Ideen führen. Außerdem fehlt eine vollständige Dokumentation sowie ein Automatismus. Die Plattform kann zwar mit mehreren Metadatenformaten arbeiten, aber eine Standardisierung fehlt. |
+| Quellcode:   | https://github.com/tursics/data-dashboard |
 
 
 
@@ -100,7 +105,8 @@ Die moderne Art ein Datenportal darzustellen: Pro Datensatz wird eine Wabe darge
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Sonstiges / MIT License |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster deployen || Quellcode:   | https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/ |
+| Benötigte Hilfe:  | Für Münster deployen |
+| Quellcode:   | https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/ |
 
 
 
@@ -116,7 +122,8 @@ Auf dieser Plattform kannst Du Dich über Bäume in Deiner Nachbarschaft und ihr
 | Technologien: | Webseite (dynamisch) mit AWS, Docker PostgresDB + Postgis, Vercel.com, Auth0.com, Mapbox, Appstores |
 | Kategorie & Lizenz:   | Umwelt / MIT License |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster deployen || Quellcode:   | https://github.com/technologiestiftung/giessdenkiez-de |
+| Benötigte Hilfe:  | Für Münster deployen |
+| Quellcode:   | https://github.com/technologiestiftung/giessdenkiez-de |
 
 
 
@@ -132,7 +139,8 @@ Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner 
 | Technologien: | Webseite mit  |
 | Kategorie & Lizenz:   | Umwelt / |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster umsetzen || Quellcode:   |  |
+| Benötigte Hilfe:  | Für Münster umsetzen |
+| Quellcode:   |  |
 
 
 
@@ -148,7 +156,8 @@ Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner 
 | Technologien: | Webseite (statisch) mit Python, Juypter Notebook |
 | Kategorie & Lizenz:   | Familie / MIT License |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster umsetzen || Quellcode:   | https://github.com/juanitorduz/website_projects/tree/master/Python |
+| Benötigte Hilfe:  | Für Münster umsetzen |
+| Quellcode:   | https://github.com/juanitorduz/website_projects/tree/master/Python |
 
 
 
@@ -164,7 +173,8 @@ Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner 
 | Technologien: | Webseite (statisch) mit React native & Expo  (Frontend) bzw. Typescript (Backend) |
 | Kategorie & Lizenz:   | Umwelt / --|
 | Status:   |  :x:   unfertig |
-| Benötigte Hilfe:  | KlimaHeroes programmiertechnisch auf dem Weg zur v1.0 unterstützen || Quellcode:   | https://github.com/KlimaHeroes |
+| Benötigte Hilfe:  | KlimaHeroes programmiertechnisch auf dem Weg zur v1.0 unterstützen |
+| Quellcode:   | https://github.com/KlimaHeroes |
 
 
 
@@ -180,7 +190,8 @@ Klimawatch ist eine einfach zu verstehende Homepage, die zeigt, ob die kommunale
 | Technologien: | Webseite (statisch) mit Python, Docker, Hugo |
 | Kategorie & Lizenz:   | Umwelt / Apache License, Version 2.0|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Daten weiterer Städte hinzufügen,  Pullrequests reviewen und mergen, ggf. weitere Funktionen programmieren. || Quellcode:   | https://github.com/codeformuenster/klimawatch/ |
+| Benötigte Hilfe:  | Daten weiterer Städte hinzufügen,  Pullrequests reviewen und mergen, ggf. weitere Funktionen programmieren. |
+| Quellcode:   | https://github.com/codeformuenster/klimawatch/ |
 
 
 <img src="images/small/kilmawatch.png" />
@@ -198,7 +209,8 @@ Städtische Geoinformationen, die für Familien relevant sind, werden in einer �
 | Technologien: | Dynamische Webseite mit Node.JS, React |
 | Kategorie & Lizenz:   | Stadtleben / |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Frontend verbessern / Daten aktualisieren || Quellcode:   |  |
+| Benötigte Hilfe:  | Frontend verbessern / Daten aktualisieren |
+| Quellcode:   |  |
 
 
 
@@ -214,7 +226,8 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | Dynamische Webseite mit Python, NodeJS, Datenbank (z.B. MariaDB), minio, Elasticsearch |
 | Kategorie & Lizenz:   | Politik / |
 | Status:   |  :x:   In Progress |
-| Benötigte Hilfe:  | Schnittstellenprobleme OParl Münster beheben || Quellcode:   | https://github.com/meine-stadt-transparent/meine-stadt-transparent/ |
+| Benötigte Hilfe:  | Schnittstellenprobleme OParl Münster beheben |
+| Quellcode:   | https://github.com/meine-stadt-transparent/meine-stadt-transparent/ |
 
 
 
@@ -230,6 +243,7 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | App mit React native & Expo (Frontend) bzw. Java Spring (Backend) |
 | Kategorie & Lizenz:   | Freizeit / |
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Privatpersonen aus Münster |
+
 | Quellcode:   |  |
 
 
@@ -246,7 +260,8 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Politik / |
 | Status:   |  :x:   kaputt |
-| Benötigte Hilfe:  | Dazu gibt eine Initiative vom Land NRW und vom KDN, dieses Thema neu anzugehen. Wenn man in der Richtung was machen möchte, dann mit dem KDN auseinandersetzen, da gibt es evtl. Unterstützungsmöglichkeiten. || Quellcode:   |  |
+| Benötigte Hilfe:  | Dazu gibt eine Initiative vom Land NRW und vom KDN, dieses Thema neu anzugehen. Wenn man in der Richtung was machen möchte, dann mit dem KDN auseinandersetzen, da gibt es evtl. Unterstützungsmöglichkeiten. |
+| Quellcode:   |  |
 
 
 
@@ -262,6 +277,7 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Stadtleben / |
 | Status:   |  :x:    |
+
 | Quellcode:   |  |
 
 
@@ -278,7 +294,8 @@ Interaktiver Rats-Sitzplan für's Handy. Nützlich z.B. wenn man zu einer Ratssi
 | Technologien: | Webseite (statisch) mit Python, Django |
 | Kategorie & Lizenz:   | Politik / Apache License 2.0|
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Open Data Münster |
-| Benötigte Hilfe:  | Wartung & Pflege || Quellcode:   | https://github.com/codeformuenster/sitzplan-rat |
+| Benötigte Hilfe:  | Wartung & Pflege |
+| Quellcode:   | https://github.com/codeformuenster/sitzplan-rat |
 
 
 <img src="images/small/rats-sitzplan.png" />
@@ -296,7 +313,8 @@ Die Idee vom Stadtarchiv, Beiträge des Schüler-Geschichtswettbewerb durch- suc
 | Technologien: | Dynamische Webseite mit Python, HTML, CSS |
 | Kategorie & Lizenz:   | Bildung / GPL v3|
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Stadtarchiv Münster |
-| Benötigte Hilfe:  | Wartung & Pflege || Quellcode:   | https://github.com/codeformuenster/schueler-geschichtswettbewerb-muenster |
+| Benötigte Hilfe:  | Wartung & Pflege |
+| Quellcode:   | https://github.com/codeformuenster/schueler-geschichtswettbewerb-muenster |
 
 
 <img src="images/small/geschichtswettbewerb.png" />
@@ -314,6 +332,7 @@ Open-Source-Reiseplanungs-Anwendung, die mehrere Bereiche wie z. B. öffentliche
 | Technologien: | Webseite mit JavaScript, Python, Docker, Shell, Ruby  |
 | Kategorie & Lizenz:   | Mobilität / dual-licensed under the EUPL v1.2 and AGPLv3 license|
 | Status:   |  :heavy_check_mark:   Live |
+
 | Quellcode:   | https://github.com/stadtnavi/ |
 
 
@@ -332,7 +351,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Technologien: | Webseite (statisch) mit HTML, Javascript |
 | Kategorie & Lizenz:   | Mobilität / |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Wartung & Pflege || Quellcode:   |  |
+| Benötigte Hilfe:  | Wartung & Pflege |
+| Quellcode:   |  |
 
 
 
@@ -348,7 +368,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Technologien: | Webseite (statisch) mit Leaflet, Shell, Javascript |
 | Kategorie & Lizenz:   | Gesellschaft / MIT License|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster deployen || Quellcode:   | https://github.com/code-for-magdeburg/streetnames-md |
+| Benötigte Hilfe:  | Für Münster deployen |
+| Quellcode:   | https://github.com/code-for-magdeburg/streetnames-md |
 
 
 <img src="images/small/streetnames-md.png" />
@@ -366,7 +387,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Bildung / |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Daten recherchieren und für Münster deployen || Quellcode:   | https://github.com/tursics/schulsanierung |
+| Benötigte Hilfe:  | Daten recherchieren und für Münster deployen |
+| Quellcode:   | https://github.com/tursics/schulsanierung |
 
 
 
@@ -382,7 +404,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Technologien: | Webseite (statisch) mit HTML, CSS |
 | Kategorie & Lizenz:   | Gesundheit / MIT License |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Weiterentwickeln / Aktualisieren der Daten für Münster || Quellcode:   | https://github.com/opendata-heilbronn/trinkwasser |
+| Benötigte Hilfe:  | Weiterentwickeln / Aktualisieren der Daten für Münster |
+| Quellcode:   | https://github.com/opendata-heilbronn/trinkwasser |
 
 
 
@@ -398,7 +421,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Technologien: | Webseite (statisch) mit HTML, CSS, Node.js, Python |
 | Kategorie & Lizenz:   | Gesundheit / |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Daten recherchieren und für Münster deployen || Quellcode:   | https://github.com/CodeforLeipzig/wo-ist-testzentrum |
+| Benötigte Hilfe:  | Daten recherchieren und für Münster deployen |
+| Quellcode:   | https://github.com/CodeforLeipzig/wo-ist-testzentrum |
 
 
 
@@ -414,7 +438,8 @@ Eine Karte mit allen Zug-Direktverbindungen aus deiner Stadt.
 | Technologien: | Webseite (statisch) mit Node.JS, Javascript, Bahn API |
 | Kategorie & Lizenz:   | Mobilität / ISC License|
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Karten werden über Mapbox gehostet, bei viel Traffic entstehen Kosten || Quellcode:   | https://github.com/juliuste/direkt.bahn.guru |
+| Benötigte Hilfe:  | Karten werden über Mapbox gehostet, bei viel Traffic entstehen Kosten |
+| Quellcode:   | https://github.com/juliuste/direkt.bahn.guru |
 
 
 
