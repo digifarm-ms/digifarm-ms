@@ -7,11 +7,30 @@ Diese Seite listet diese Projekte samt Status und weiteren Informationen.
 
 ----------------------
 
+## "direkt.bahn.guru" - Zug-Direktverbindungen
+
+Eine Karte mit allen Zug-Direktverbindungen aus deiner Stadt.
+
+| Projekt-Ursprung:   | Berlin / CodeForGermany (01/2019) |
+| :------------- |:-------------|
+| Technologien: | Webseite (statisch) mit Node.JS, Javascript, Bahn API |
+| Kategorie & Lizenz:   | Mobilität / ISC License|
+| Status:   |  :heavy_check_mark:   Live |
+| Benötigte Hilfe:  | Karten werden über Mapbox gehostet, bei viel Traffic entstehen Kosten |
+| Quellcode:   | https://github.com/juliuste/direkt.bahn.guru |
+
+
+<img src="images/small/direkt-bahn-guru.png" />
+
+
+
+----------------------
+
 ## AB-Street
 
-A/B-Street kann dast städtische Straßensystem samt Verkehr simulieren. Es soll eine Auseinandersetzung mit dem lokalen Verkehrssystem ermöglichen. Bestehende Stadtplanungssoftware ist entweder proprietär oder schwer zu bedienen. A/B Street will leicht zugänglich sein, indem es ein unterhaltsames, fesselndes Spiel ist. 
+A/B-Street kann das städtische Straßensystem samt Verkehr simulieren. Es soll eine Auseinandersetzung mit dem lokalen Verkehrssystem ermöglichen. Bestehende Stadtplanungssoftware ist entweder proprietär oder schwer zu bedienen. A/B Street will leicht zugänglich sein, indem es ein unterhaltsames, fesselndes Spiel ist. 
 
-| Projekt-Ursprung:   |  / ROGL (2018) |
+| Projekt-Ursprung:   | London / DemocracyLab (2018) |
 | :------------- |:-------------|
 | Technologien: | interaktive Webseite mit RUST, Cargo, OSM |
 | Kategorie & Lizenz:   | Mobilität / Apache-2.0 license |
@@ -19,6 +38,8 @@ A/B-Street kann dast städtische Straßensystem samt Verkehr simulieren. Es soll
 | Benötigte Hilfe:  | Deployment für Münster |
 | Quellcode:   | https://github.com/a-b-street/abstreet |
 
+
+<img src="images/small/ab-street.png" />
 
 
 
@@ -92,15 +113,36 @@ Die moderne Art ein Datenportal darzustellen: Pro Datensatz wird eine Wabe darge
 | Quellcode:   | https://github.com/tursics/data-dashboard |
 
 
+<img src="images/small/datenwaben.png" />
+
+
+
+----------------------
+
+## EventFahrplan
+
+Eine Android-App um Programmpläne für große Veranstaltungen bereitzustellen – grundsätzlich ein Whitelabel-Projekt, das für alle denkbaren Veranstaltungen angepasst werden kann, derzeit wird es vor allem genutzt bei Chaosveranstaltungen.
+
+| Projekt-Ursprung:   | Chaos Communication Camp / ROGL (2011) |
+| :------------- |:-------------|
+| Technologien: | Android-App mit Kotlin, Java, Dateninput über frab/Pretalx |
+| Kategorie & Lizenz:   | Gemeinschaft, Veranstaltungen / Apache-2.0 license|
+| Status:   |  :heavy_check_mark:   Live |
+| Benötigte Hilfe:  | Personelle Ressourcen, um das Projekt langfristig zu unterstützen. Nur kurzfristige Finanzierungen wie beispielsweise über den Prototypefund helfen nicht. Aktuell wird das Projekt ausschließlich in der Freizeit weiterentwickelt, dauerhaft übersteigt das aber die Aufwandskosten. |
+| Quellcode:   | https://github.com/EventFahrplan/EventFahrplan |
+
+
+<img src="images/small/eventfahrplan.png" />
+
 
 
 ----------------------
 
 ## Geoserver "Masterportal"
 
+In der Freien und Hansestadt Hamburg kommt es immer dann zum Einsatz, wenn webbasierte Kartenanwendungen benötigt werden – als eigenständige Anwendung oder als Teil einer E-Government-Lösung. Auch in anderen Städten und Kreisen wird das Masterportal eingesetzt. Das Masterportal ist Open-Source-Software.
 
-
-| Projekt-Ursprung:   | Hamburg / CodeForGermany () |
+| Projekt-Ursprung:   | Hamburg / CodeForGermany (2015) |
 | :------------- |:-------------|
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Sonstiges / MIT License |
@@ -108,6 +150,8 @@ Die moderne Art ein Datenportal darzustellen: Pro Datensatz wird eine Wabe darge
 | Benötigte Hilfe:  | Für Münster deployen |
 | Quellcode:   | https://bitbucket.org/geowerkstatt-hamburg/masterportal/src/dev/ |
 
+
+<img src="images/small/masterportal.png" />
 
 
 
@@ -126,6 +170,8 @@ Auf dieser Plattform kannst Du Dich über Bäume in Deiner Nachbarschaft und ihr
 | Quellcode:   | https://github.com/technologiestiftung/giessdenkiez-de |
 
 
+<img src="images/small/giess-den-kiez.png" />
+
 
 
 ----------------------
@@ -134,14 +180,16 @@ Auf dieser Plattform kannst Du Dich über Bäume in Deiner Nachbarschaft und ihr
 
 Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner Nachbarschaft informieren und Deinen Nachbar*innen mitteilen ob Du die Bäume gegossen hast.
 
-| Projekt-Ursprung:   | Köln / CodeForGermany () |
+| Projekt-Ursprung:   | Köln / CodeForGermany (2020) |
 | :------------- |:-------------|
-| Technologien: | Webseite mit  |
-| Kategorie & Lizenz:   | Umwelt / |
+| Technologien: | Webseite mit JavaScript, HTML, Python, OpenLayers6 |
+| Kategorie & Lizenz:   | Umwelt / BSD-2-Clause license |
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Für Münster umsetzen |
-| Quellcode:   |  |
+| Quellcode:   | https://github.com/codeforcologne/giesstKoelle |
 
+
+<img src="images/small/giesst-koelle.png" />
 
 
 
@@ -149,7 +197,7 @@ Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner 
 
 ## Kita-Standorte - stadtweite Analyse
 
-
+Informationen über Kitas (Kindertagesstätten) in Berlin werden per explorative Datenanalyse betrachtet, dann mit Bevölkerungsdaten zusammengeführt, um Geolocation-Karten zu erstellen.
 
 | Projekt-Ursprung:   | Berlin / CodeForGermany (09/2020) |
 | :------------- |:-------------|
@@ -159,6 +207,8 @@ Mit dieser Web-Karte kannst Du Dich über den Wasserbedarf der Bäume in deiner 
 | Benötigte Hilfe:  | Für Münster umsetzen |
 | Quellcode:   | https://github.com/juanitorduz/website_projects/tree/master/Python |
 
+
+<img src="images/small/kitas-berlin.png" />
 
 
 
@@ -221,14 +271,16 @@ Städtische Geoinformationen, die für Familien relevant sind, werden in einer �
 
 Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlichen Weboberfläche und einer mächtigen Suche, die auch in einer großen Zahl an Rats-Dokumenten eine effektive Recherche ermöglicht.
 
-| Projekt-Ursprung:   | München? / CodeForGermany () |
+| Projekt-Ursprung:   | München? / CodeForGermany (2017) |
 | :------------- |:-------------|
 | Technologien: | Dynamische Webseite mit Python, NodeJS, Datenbank (z.B. MariaDB), minio, Elasticsearch |
-| Kategorie & Lizenz:   | Politik / |
+| Kategorie & Lizenz:   | Politik / MIT license |
 | Status:   |  :x:   In Progress |
 | Benötigte Hilfe:  | Schnittstellenprobleme OParl Münster beheben |
 | Quellcode:   | https://github.com/meine-stadt-transparent/meine-stadt-transparent/ |
 
+
+<img src="images/small/meine-stadt-transparent.png" />
 
 
 
@@ -243,7 +295,6 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | App mit React native & Expo (Frontend) bzw. Java Spring (Backend) |
 | Kategorie & Lizenz:   | Freizeit / |
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Privatpersonen aus Münster |
-
 | Quellcode:   |  |
 
 
@@ -264,6 +315,8 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Quellcode:   |  |
 
 
+<img src="images/small/offener-haushalt.png" />
+
 
 
 ----------------------
@@ -277,7 +330,6 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Stadtleben / |
 | Status:   |  :x:    |
-
 | Quellcode:   |  |
 
 
@@ -332,7 +384,6 @@ Open-Source-Reiseplanungs-Anwendung, die mehrere Bereiche wie z. B. öffentliche
 | Technologien: | Webseite mit JavaScript, Python, Docker, Shell, Ruby  |
 | Kategorie & Lizenz:   | Mobilität / dual-licensed under the EUPL v1.2 and AGPLv3 license|
 | Status:   |  :heavy_check_mark:   Live |
-
 | Quellcode:   | https://github.com/stadtnavi/ |
 
 
@@ -346,14 +397,16 @@ Open-Source-Reiseplanungs-Anwendung, die mehrere Bereiche wie z. B. öffentliche
 
 Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde errechnet aus den täglichen Radstrecken, die während der "Stadtradeln"-Aktion von Freiwilligen TeilnehmerInnen aufgezeichnet wurden.
 
-| Projekt-Ursprung:   | Münster / CodeForGermany () |
+| Projekt-Ursprung:   | Münster / CodeForGermany (2017) |
 | :------------- |:-------------|
 | Technologien: | Webseite (statisch) mit HTML, Javascript |
-| Kategorie & Lizenz:   | Mobilität / |
+| Kategorie & Lizenz:   | Mobilität / --|
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Wartung & Pflege |
-| Quellcode:   |  |
+| Quellcode:   | https://github.com/codeformuenster/stadtradeln-vis |
 
+
+<img src="images/small/stadtradeln-heatmap.png" />
 
 
 
@@ -378,11 +431,30 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 
 ----------------------
 
+## Umweltzone
+
+Diese Android-App bietet deutschlandweit Informationen zu Umweltzonen und ihrer exakten geographischen Lage. Wird z.B. genutzt von Menschen mit alten Autos, Wohnwagen etc.
+
+| Projekt-Ursprung:   |  / ROGL (2013) |
+| :------------- |:-------------|
+| Technologien: | App mit Java, Kotlin |
+| Kategorie & Lizenz:   | Bürgerservice / GPL v3|
+| Status:   |  :heavy_check_mark:   Live |
+| Benötigte Hilfe:  | Es fehlen vor allem Daten. Zwar funktioniert der Prototyp, aber für langfristige Stabilität muss es maschinenlesbare Geodaten geben. Die Hälfte der Arbeit ist nicht Programmierarbeit, sondern Datenbeschaffung und -aufbereitung und Kommunikation. Zu jeder in der App vorhandenen Stadt besteht über Jahre Telefonkontakt. |
+| Quellcode:   | https://bitbucket.org/tbsprs/umweltzone/src/master/ |
+
+
+<img src="images/small/umweltzone.png" />
+
+
+
+----------------------
+
 ## Visualisierung von Sanierungsstau
 
+Die Anwendung zeigt gemeldete Sanierungsbedarfe bei Schulgebäuden (Stand 2016 in Berlin). Die Daten stammen von der Senatsverwaltung für Bildung, Jugend und Wissenschaft, von der sie auch derzeit einer Plausibilitätsprüfung unterzogen werden. 
 
-
-| Projekt-Ursprung:   | Berlin / CodeForGermany () |
+| Projekt-Ursprung:   | Berlin / CodeForGermany (2016) |
 | :------------- |:-------------|
 | Technologien: | Webseite (statisch) mit  |
 | Kategorie & Lizenz:   | Bildung / |
@@ -390,6 +462,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Benötigte Hilfe:  | Daten recherchieren und für Münster deployen |
 | Quellcode:   | https://github.com/tursics/schulsanierung |
 
+
+<img src="images/small/wo-unsere-kinder-lernen.png" />
 
 
 
@@ -399,7 +473,7 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 
 Übersichtliche Darstellung der Inhaltsstoffe des lokalen Leitungswassers und Vergleich mit Mineralwasser.
 
-| Projekt-Ursprung:   | Heilbronn / CodeForGermany () |
+| Projekt-Ursprung:   | Heilbronn / CodeForGermany (2014) |
 | :------------- |:-------------|
 | Technologien: | Webseite (statisch) mit HTML, CSS |
 | Kategorie & Lizenz:   | Gesundheit / MIT License |
@@ -407,6 +481,8 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Benötigte Hilfe:  | Weiterentwickeln / Aktualisieren der Daten für Münster |
 | Quellcode:   | https://github.com/opendata-heilbronn/trinkwasser |
 
+
+<img src="images/small/leitungswasser-mineralwasser.png" />
 
 
 
@@ -423,23 +499,6 @@ Diese Visualisierung zeigt, wo am meisten Fahrrad gefahren wird. Diese wurde err
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Daten recherchieren und für Münster deployen |
 | Quellcode:   | https://github.com/CodeforLeipzig/wo-ist-testzentrum |
-
-
-
-
-----------------------
-
-## Zug-Direktverbindungen
-
-Eine Karte mit allen Zug-Direktverbindungen aus deiner Stadt.
-
-| Projekt-Ursprung:   | Berlin / CodeForGermany (01/2019) |
-| :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit Node.JS, Javascript, Bahn API |
-| Kategorie & Lizenz:   | Mobilität / ISC License|
-| Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Karten werden über Mapbox gehostet, bei viel Traffic entstehen Kosten |
-| Quellcode:   | https://github.com/juliuste/direkt.bahn.guru |
 
 
 
