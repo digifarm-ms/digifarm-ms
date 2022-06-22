@@ -58,6 +58,8 @@ A/B-Street kann das städtische Straßensystem samt Verkehr simulieren. Es soll 
 | Quellcode:   | https://github.com/maxluetkemeyer/blood-donation-app |
 
 
+<img src="images/small/ukm-blutspende.png" />
+
 
 
 ----------------------
@@ -216,16 +218,18 @@ Informationen über Kitas (Kindertagesstätten) in Berlin werden per explorative
 
 ## Klimaheroes
 
-
+KlimaHeroes hilft dir, dein Verhalten spielerisch klimafreundlicher zu gestalten. Wir motivieren dich, deine Gewohnheiten innerhalb einer regionalen Community zu verändern, angepasst an deine ganz persönliche Lebenswelt.
 
 | Projekt-Ursprung:   | Münster / Münsterhack (09/2021) |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit React native & Expo  (Frontend) bzw. Typescript (Backend) |
+| Technologien: | App mit React native & Expo  (Frontend) bzw. Typescript (Backend) |
 | Kategorie & Lizenz:   | Umwelt / --|
 | Status:   |  :x:   unfertig |
 | Benötigte Hilfe:  | KlimaHeroes programmiertechnisch auf dem Weg zur v1.0 unterstützen |
 | Quellcode:   | https://github.com/KlimaHeroes |
 
+
+<img src="images/small/klimaheroes.png" />
 
 
 
@@ -254,14 +258,16 @@ Klimawatch ist eine einfach zu verstehende Homepage, die zeigt, ob die kommunale
 
 Städtische Geoinformationen, die für Familien relevant sind, werden in einer übersichtlichen Karte präsentiert. Z.B. Kitas, Schulen, Spielplätze, Wickelplätze, öffentliche Toiletten, WLANs, etc..
 
-| Projekt-Ursprung:   | Münster / CodeForGermany () |
+| Projekt-Ursprung:   | Münster / CodeForGermany (09/2017) |
 | :------------- |:-------------|
 | Technologien: | Dynamische Webseite mit Node.JS, React |
-| Kategorie & Lizenz:   | Stadtleben / |
+| Kategorie & Lizenz:   | Stadtleben / Apache-2.0 license|
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Frontend verbessern / Daten aktualisieren |
-| Quellcode:   |  |
+| Quellcode:   | https://github.com/codeformuenster/muenster-dashboard |
 
+
+<img src="images/small/mein-ms.png" />
 
 
 
@@ -298,6 +304,42 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 | Quellcode:   |  |
 
 
+<img src="images/small/muensters-fair.jpg" />
+
+
+
+----------------------
+
+## Münster.jetzt
+
+Das Projekt entstand beim Münsterhack mit dem Ziel, einen Veranstaltungskalender anzubieten. Mittlerweile können die Termine auf den Info-Bildschirmen am Bahnhof ausgespielt werden.
+
+| Projekt-Ursprung:   |  / CodeForMünster () |
+| :------------- |:-------------|
+| Technologien: | Webseite, außerdem optimiert für Anzeigetafeln im Bahnhof mit  |
+| Kategorie & Lizenz:   | Bürgerservice / MIT license|
+| Status:   |  :x:   pausiert |
+| Benötigte Hilfe:  | - |
+| Quellcode:   | https://github.com/codeformuenster/muenster-jetzt |
+
+
+
+
+----------------------
+
+## Name Your Babe / Baby benamsen
+
+Das Projekt entstand im Rahmen des erster Open-Data-Hackathons „App for Germany“ im Jahr 2012, bei dem Daten aus Berlin und Bremen genutzt werden sollten. Daten, die in beiden Portalen vorhanden waren, waren eben die Vornamen, deshalb wurde ausgetestet, was damit gemacht werden kann.
+
+| Projekt-Ursprung:   |  / ROGL () |
+| :------------- |:-------------|
+| Technologien: | App mit PhoneGap version 3.7.0 |
+| Kategorie & Lizenz:   | Bürgerservice, aber auch für Handwerk (z.B. Vornamens-Tassen) / |
+| Status:   |  :heavy_check_mark:   Live |
+| Benötigte Hilfe:  | Es bräuchte ein einheitliches Metadatenformat, das offen ist – die Daten werden außerdem auch von der Gesellschaft für deutsche Sprache in jährliche Statistiken herausgegeben, allerdings kostenpflichtig. |
+| Quellcode:   | https://github.com/tursics/NameYourBabe |
+
+
 
 
 ----------------------
@@ -321,32 +363,16 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 
 ----------------------
 
-## Open Smart City App
-
-
-
-| Projekt-Ursprung:   | Solingen / CodeForGermany () |
-| :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit  |
-| Kategorie & Lizenz:   | Stadtleben / |
-| Status:   |  :x:    |
-| Quellcode:   |  |
-
-
-
-
-----------------------
-
 ## Rats-Sitzplan
 
 Interaktiver Rats-Sitzplan für's Handy. Nützlich z.B. wenn man zu einer Ratssitung geht und nachschauen möchte, wer gerade spricht.
 
 | Projekt-Ursprung:   | Münster / CodeForGermany (12/2018) |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit Python, Django |
+| Technologien: | Webseite (statisch) mit Python, Django, Bootstrap, Jinja, JSON API "OParl" des Ratsinformationssystems |
 | Kategorie & Lizenz:   | Politik / Apache License 2.0|
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Open Data Münster |
-| Benötigte Hilfe:  | Wartung & Pflege |
+| Benötigte Hilfe:  | Dieses Projekt wird kostenlos auf Github-Pages gehostet. Nur wenn sich der Rats-Sitzplan ändert, muss die HTML-Seite aktualisiert werden, indem das Python-Skript gestartet und die automatisch erzeugte HTML-Datei im GIT-Repository eingecheckt wird. |
 | Quellcode:   | https://github.com/codeformuenster/sitzplan-rat |
 
 
@@ -483,6 +509,25 @@ Die Anwendung zeigt gemeldete Sanierungsbedarfe bei Schulgebäuden (Stand 2016 i
 
 
 <img src="images/small/leitungswasser-mineralwasser.png" />
+
+
+
+----------------------
+
+## Wo ist Markt
+
+Das Projekt möchte zeigen, wann und wo Märkte stattfinden und damit eine Orientierungshilfe bieten für Menschen, die ihre Umgebung neu entdecken wollen, etwa weil sie viel unterwegs sind und Neues entdecken wollen oder frisch in die Stadt gezogen sind.
+
+| Projekt-Ursprung:   | Karlsruhe / CodeForGermany (03/2016) |
+| :------------- |:-------------|
+| Technologien: | Kartenanwendung mit HTML, CSS, JavaScript, Leaflet, JQuery |
+| Kategorie & Lizenz:   | Bürgerservice / Offene Lizenz mit eigenem Lizenztext|
+| Status:   |  :x:   aktiv, Datenqualität sehr unterschiedlich: Daten für Berlin sind beispielsweise aktuell, bei anderen Daten ist nicht sicher, ob sie korrekt oder veraltet sind. |
+| Benötigte Hilfe:  | Es fehlen dauerhafte Paten für die Seite, um Aktivität weiterzubehalten: Für den stabilen Betrieb ist eine kritische Masse an technischen Supportern und aktiven Nutzer:innen nötig. |
+| Quellcode:   | https://github.com/wo-ist-markt/wo-ist-markt.github.io |
+
+
+<img src="images/small/wo-ist-markt.png" />
 
 
 
