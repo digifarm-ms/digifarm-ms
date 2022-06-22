@@ -2,7 +2,7 @@
 
 import csv
 import logging
-import os.path
+import os
 import config as cfg
 from urllib.request import urlopen
 from datetime import datetime
@@ -56,8 +56,12 @@ def readCsvProjectList():
 
           if ("Vorschaubild" in row) and row["Vorschaubild"]:
             image_file=row["Vorschaubild"]
-            resize_and_crop('../images/big/' + image_file, '../images/small/' + image_file, [500,350])
-            LOGGER.debug("Adding image: %s", image_file)
+            small_image_filename = '../images/small/' + image_file
+            if os.path.exists(small_image_filename):
+                LOGGER.debug("Skip image resize! File already exists: %s", image_file)
+            else:
+                resize_and_crop('../images/big/' + image_file, small_image_filename, [500,350])
+                LOGGER.debug("Creating small image: %s", image_file)
 
         else:
           LOGGER.warning("Filter not 'DF' in row %s: %s", row_nr, row["Name"])
@@ -76,6 +80,34 @@ def renderJinjaTemplate(directory, template_name, **kwargs):
     env = Environment(loader=loader)
     template = env.get_template(template_name)
     return template.render(**kwargs)
+
+
+def writeProjectDetails(projects):
+    LOGGER.info("===========================> Writing project detail pages")
+    htmlpath = '../html/'
+    try:
+        os.mkdir(htmlpath)
+    except OSError as error:
+        LOGGER.info(error)
+
+    for project in projects:
+
+        projectSlug = project["Vorschaubild"].split('.')[0]
+        if not projectSlug:
+            LOGGER.warning("No Vorschaubild! Skipping: %s", project["Name"])
+            continue
+
+        LOGGER.info("Project %s", projectSlug)
+        projectFilename = projectSlug + '.html'
+        templateData = {
+            "DATE": datetime.today().strftime('%Y-%m-%d'),
+            "PROJECT": project,
+            "SLUG": projectSlug
+        }
+        html = renderJinjaTemplate("", "template-details-html.jinja2", **templateData)
+
+        with open(htmlpath + projectFilename, 'w') as outfile:
+            outfile.write(html)
 
 
 def writeMarkdownFiles(projects):
@@ -147,4 +179,4 @@ def resize_and_crop(img_path, modified_path, size, crop_type='top'):
 
 PROJECTS = readCsvProjectList()
 writeMarkdownFiles(PROJECTS)
-
+writeProjectDetails(PROJECTS)
