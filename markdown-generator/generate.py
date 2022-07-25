@@ -72,6 +72,16 @@ def readCsvProjectList():
 
   return projects
 
+def renderPersonInsideJinja(name):
+    personString = name
+    if name.startswith("https://github.com/"):
+        unused_rest, username  = name.rsplit("github.com/")
+        personString = '<a href="{}" target="_blank">@{}</a>'.format(name, username)
+    elif name == "Github":
+        personString = '<div class="image"><p><img style="height:auto" alt="Github.com" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" /></p></div>'
+
+    return personString
+
 
 def renderJinjaTemplate(directory, template_name, **kwargs):
     # Use Jinja2 Template engine for HTML generation
@@ -102,7 +112,8 @@ def writeProjectDetails(projects):
         templateData = {
             "DATE": datetime.today().strftime('%Y-%m-%d'),
             "PROJECT": project,
-            "SLUG": projectSlug
+            "SLUG": projectSlug,
+            "renderPersonInsideJinja": renderPersonInsideJinja
         }
         html = renderJinjaTemplate("", "template-details-html.jinja2", **templateData)
 
