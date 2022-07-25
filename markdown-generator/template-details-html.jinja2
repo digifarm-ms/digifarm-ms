@@ -3,10 +3,6 @@
 
 <p>{{PROJECT.Langbeschreibung}}</p>
 
-<!-- p><a class="internal-link" href="t3://page?uid=37222">Linkmöglichkeit 1</a></p>
-
-<p><a class="btn btn-green internal-link" href="t3://page?uid=37222">Linkmöglichkeit 2</a></p -->
-
 <p></p>
 
 <h3>Allgemeine Informationen</h3>
@@ -46,11 +42,11 @@
 
 <h3>Beschreibung der Aufgaben&nbsp;</h3>
 
-<div class="teaser content-element-wrapper">
+<div class="teaser content-element-wrapper" style="margin-top:-50px">
 <div class="row">
 <div class="col-12 col-md-4">
 <div class="image">
-<p><img alt="" src="/fileadmin/_processed_/9/3/csm_photovoltaikanlage_1b3a2bad62.jpg" /></p>
+<p><img style="height:auto;bottom:0;top:auto" alt="Inhalte" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-redakteurin.png" /></p>
 </div>
 
 <div class="text">
@@ -58,35 +54,56 @@
 
 <p>{{PROJECT["Benötigte Hilfe Inhalte"]}}</p>
 
-<p><a class="btn btn-green internal-link" href="https://awm.stadt-muenster.de/panorama/stadtsauberkeit?ADMCMD_prev=IGNORE">Mehr erfahren &amp; mitmachen</a></p>
+{% if PROJECT.Inhalt %}
+	<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Inhalt)}}</p>
+{% else %}
+	<span class="badge" style="background-color:#aa5">Hilfe für die Inhalte gesucht!</span>
+{% endif %}
+
 </div>
 </div>
 
 <div class="col-12 col-md-4">
 <div class="image">
-<p><img alt="" src="/fileadmin/_processed_/f/6/csm_windradgr_989ffc3309.jpg" /></p>
+<p><img style="height:auto;bottom:0;top:auto" alt="Technik" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-entwicklerin.png" /></p>
 </div>
 
 <div class="text">
 <h3>Technik</h3>
 
 <p>{{PROJECT["Benötigte Hilfe Technik"]}}</p>
+
+{% if PROJECT.Technik %}
+	<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Technik)}}</p>
+{% else %}
+	<span class="badge" style="background-color:#aa5">Technik-Hilfe gesucht!</span>
+{% endif %}
+
 </div>
 </div>
 
 <div class="col-12 col-md-4">
 <div class="image">
-<p><img alt="" src="/fileadmin/_processed_/9/5/csm_Laub_EKehrmaschinegr_ed25567258.jpg" /></p>
+<p><img style="height:auto;bottom:0;top:auto" alt="Sponsor" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-sponsorin.png" /></p>
 </div>
 
 <div class="text">
 <h3>Sponsor</h3>
 
 <p>{{PROJECT["Benötigtes Sponsoring"]}}</p>
+
+{% if PROJECT.Sponsor %}
+	<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Sponsor)}}</p>
+{% else %}
+	<span class="badge" style="background-color:#aa5">Sponsoring gesucht!</span>
+{% endif %}
+
 </div>
 </div>
 </div>
 </div>
+
+<p><a class="btn btn-green internal-link" href="https://awm.stadt-muenster.de/panorama/stadtsauberkeit?ADMCMD_prev=IGNORE">Mehr erfahren &amp; mitmachen</a></p>
 
 <p></p>
 
@@ -102,29 +119,29 @@
 			<td>Technologie(n):</td>
 			<td>{{PROJECT["Technologien"]}}</td>
 		</tr>
+{% if PROJECT["Weitere Infos"] %}
 		<tr>
-			<td>Funktionsweise:</td>
-			<td>Statische Webseite, generiert mit Python-Skript</td>
+			<td>Weitere Infos:</td>
+			<td>{{PROJECT["Weitere Infos"]}}</td>
 		</tr>
+{% endif %}
 		<tr>
 			<td>Deployment:</td>
 			<td>{{PROJECT["Deployment"]}}</td>
 		</tr>
+{% if PROJECT.Infoseite %}
 		<tr>
 			<td>Infoseite:</td>
-			<td>{{PROJECT["Infoseite"]}}</td>
+			<td><a href="{{PROJECT["Infoseite"]}}">{{PROJECT["Infoseite"]}}</a></td>
 		</tr>
+{% endif %}
 		<tr>
 			<td>Kollaborationsplattform:</td>
 			<td>{{PROJECT["Kollaborationsplattform"]}}</td>
 		</tr>
 		<tr>
-			<td>Hosting:</td>
-			<td>{{PROJECT["Hosting"]}}</td>
-		</tr>
-		<tr>
 			<td>Quellcode-URL:</td>
-			<td><a href="{{PROJECT["Technologien"]}}">{{PROJECT["Technologien"]}}</a></td>
+			<td><a href="{{PROJECT["Quellcode"]}}">{{PROJECT["Quellcode"]}}</a></td>
 		</tr>
 		<tr>
 			<td>Quellcode-Lizenz:</td>
