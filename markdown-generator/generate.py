@@ -1,7 +1,8 @@
 # -*- coding: UTF-8 -*-
 
-import csv
 import logging
+import json
+import csv
 import os
 import config as cfg
 from urllib.request import urlopen
@@ -11,7 +12,7 @@ from PIL import Image
 
 
 # Basic logger configuration
-logging.basicConfig(level=logging.DEBUG, format='<%(asctime)s %(levelname)s> %(message)s')
+logging.basicConfig(level=logging.INFO, format='<%(asctime)s %(levelname)s> %(message)s')
 LOGGER = logging.getLogger(__name__)
 TODAY = datetime.now()
 LOGGER.info("=====> START %s <=====", TODAY)
@@ -23,6 +24,8 @@ PROJECTLIST_URL = cfg.csv_url
 PROJECTLIST_TEMP_FILE = "project_list.csv"
 
 def readCsvProjectList():
+  LOGGER.info("===========================> Assemble project list")
+
   if os.path.isfile(PROJECTLIST_TEMP_FILE):
     LOGGER.debug("Local project file exists: %s", PROJECTLIST_TEMP_FILE)
   else:
@@ -50,12 +53,12 @@ def readCsvProjectList():
         LOGGER.info("Found columns: %s", row.keys())
 
       if ("Name" in row) and row["Name"]:
-        if ("Filter" in row) and (row["Filter"] == "DF"):
+        if ("Filter" in row) and ((row["Filter"] == "DF") or (row["Filter"] == "DFMS")):
           projects.append(row)
-          LOGGER.info("Adding row %s: %s", row_nr, row["Name"])
+          LOGGER.info("Adding row %s: %s (%s)", row_nr, row["Name"], row["Filter"])
 
           if ("Vorschaubild" in row) and row["Vorschaubild"]:
-            image_file=row["Vorschaubild"]
+            image_file = row["Vorschaubild"]
             small_image_filename = '../images/small/' + image_file
             if os.path.exists(small_image_filename):
                 LOGGER.debug("Skip image resize! File already exists: %s", image_file)
@@ -64,7 +67,7 @@ def readCsvProjectList():
                 LOGGER.debug("Creating small image: %s", image_file)
 
         else:
-          LOGGER.warning("Filter not 'DF' in row %s: %s", row_nr, row["Name"])
+          LOGGER.info("* Skipping row %s: %s (Filter not 'DF')", row_nr, row["Name"])
       else:
         LOGGER.warning("Empty row %s", row_nr)
 
@@ -188,6 +191,63 @@ def resize_and_crop(img_path, modified_path, size, crop_type='top'):
     img.save(modified_path)
 
 
+def writeJsonProjectListForSearchIframe(projects):
+    LOGGER.info("===========================> Writing digifarm.json for search-iframe")
+
+    fieldmapping = {"Aufgen. am": "Aufnahmedatum"}
+
+    required_fields = [
+        "Name", "Kurzbeschreibung", "Langbeschreibung", "Ursprung", "Quelle",
+        "Kategorie", "Typ", "Komplexität", "Aufnahmedatum", "Projekt-Url",
+        "Status", "Digifarm-Projekt", "Technik",
+        "Inhalt", "Sponsor", "Technologien", "Kollaborationsplattform",
+        "Quellcode", "Lizenz", "Projektstart", "Digifarm-Url", "Vorschaubild"
+    ]
+    json_projectlist = []
+
+    for project in projects:
+
+        for map_from, map_to in fieldmapping.items():
+            project[map_to] = project[map_from]
+
+        # only add münster projects to the iframe json list
+        if (project["Filter"] == "DFMS"):
+
+            # skip projects without image
+            if not project["Vorschaubild"]:
+                LOGGER.warning("No Vorschaubild! Skipping: %s", project["Name"])
+                continue
+
+            # convert preview image to valid uri
+            project["Vorschaubild"] = "https://od-ms.github.io/digifarm-ms/images/small/" + project["Vorschaubild"]
+
+            # make sure all keys we need are there
+            for field in required_fields:
+                if not field in project:
+                    LOGGER.error("%s: missing required key '%s'", project["Name"], field)
+                    continue
+
+            # make sure ideenfarm url is set
+            if not project["Digifarm-Url"]:
+                LOGGER.error("%s: missing value for 'Digifarm-Url'", project["Name"])
+                continue
+
+            # remove unwanted keys & values from project dictionary
+            reduced_project = {key: project[key] for key in required_fields}
+
+            LOGGER.info("Adding %s", project["Name"])
+
+            json_projectlist.append(reduced_project)
+
+    jsonString = json.dumps(json_projectlist, indent=2)
+    jsonFile = open("../../digifarm-search/data/digifarm.json", "w")
+    jsonFile.write(jsonString)
+    jsonFile.close()
+
+
+
 PROJECTS = readCsvProjectList()
 writeMarkdownFiles(PROJECTS)
 writeProjectDetails(PROJECTS)
+writeJsonProjectListForSearchIframe(PROJECTS)
+
