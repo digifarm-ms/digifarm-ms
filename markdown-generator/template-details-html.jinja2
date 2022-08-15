@@ -1,18 +1,29 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Digifarm.ms - {{PROJECT["Name"]}}</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<style>
+	textarea {margin: 0 20px 20px 0;width:300px;height:200px}
+	img {margin:20px;}
+	</style>
+</head>
+<body>
 
+<h2>{{PROJECT.Name}}</h2>
 <p><strong>{{PROJECT.Kurzbeschreibung}}</strong></p>
 
 <p>{{PROJECT.Langbeschreibung}}</p>
 
 <p></p>
 
+<a href="screenshots/{{PROJECT.Vorschaubild}}">
+<img style="float:right" width="300" alt="Bildschirmfoto" src="https://raw.githubusercontent.com/od-ms/digifarm-ms/main/images/small/{{PROJECT.Vorschaubild}}" /></a>
+
 <h3>Allgemeine Informationen</h3>
 
 <table>
 	<tbody>
-		<tr>
-			<td>Bildschirmfoto:</td>
-			<td><img alt="Bildschirmfoto" src="https://raw.githubusercontent.com/od-ms/digifarm-ms/main/images/small/{{PROJECT.Vorschaubild}}" /></td>
-		</tr>
 		<tr>
 			<td>Projekt-URL:</td>
 			<td><a href="{{PROJECT["Projekt-Url"]}}">{{PROJECT["Projekt-Url"]}}</a></td>
@@ -95,12 +106,15 @@
 
 <h3>Beschreibung der Aufgaben&nbsp;</h3>
 
+<hr />
+
+
 <div class="teaser">
 <div class="row" style="background-color:white">
 <div class="col-12 col-md-4">
-<div class="image" style="margin-top:0">
+<!-- div class="image" style="margin-top:0">
 <p><img style="height:auto;bottom:0;top:auto" alt="Inhalte" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-redakteurin.png" /></p>
-</div>
+</div -->
 
 <div class="text">
 <h3>Inhalte</h3>
@@ -117,9 +131,9 @@
 </div>
 
 <div class="col-12 col-md-4">
-<div class="image" style="margin-top:0">
+<!-- div class="image" style="margin-top:0">
 <p><img style="height:auto;bottom:0;top:auto" alt="Technik" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-entwicklerin.png" /></p>
-</div>
+</div -->
 
 <div class="text">
 <h3>Technik</h3>
@@ -136,9 +150,9 @@
 </div>
 
 <div class="col-12 col-md-4">
-<div class="image" style="margin-top:0">
+<!-- div class="image" style="margin-top:0">
 <p><img style="height:auto;bottom:0;top:auto" alt="Sponsor" src="https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/DigiFarm/pics/logos/helfende-sponsorin.png" /></p>
-</div>
+</div -->
 
 <div class="text">
 <h3>Sponsor</h3>
@@ -153,8 +167,9 @@
 
 </div>
 </div>
+<hr />
 
-<p><a class="btn btn-green internal-link" href="https://www.stadt-muenster.de/digifarm/mitmachen">Hier klicken, um bei diesem Projekt mitzuhelfen</a></p>
+<!-- p><a class="btn btn-green internal-link" href="https://www.stadt-muenster.de/digifarm/mitmachen">Hier klicken, um bei diesem Projekt mitzuhelfen</a></p -->
 
 </div>
 </div>
@@ -183,3 +198,21 @@
 </table>
 
 <p></p -->
+
+<textarea style="float:left" id="html1"></textarea>
+<textarea id="html2"></textarea>
+
+<br /> <br />
+
+<script>
+var counter = 0;
+var el = document.querySelectorAll( 'table' ).forEach(function(el) {
+	const target = el;
+	const table = target.closest("table");
+	if (table) {
+		console.log(table)
+		document.getElementById("html" + (++counter)).value = table.outerHTML;
+	}
+});
+</script>
+</body></html>
