@@ -1,0 +1,174 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Digifarm.ms - {{PROJECT["Name"]}}</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<style>
+	body {margin-top:20px;}
+	img.screenshot {width:100%}
+	table {    height: 80%; }
+	.screenshot-container {height:200px;overflow:hidden}
+	.text{height:100%}
+	.top-line {border-top: 1px solid #bbb;}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-7">
+
+				<h2>{{PROJECT.Name}}</h2>
+				<p><strong>{{PROJECT.Kurzbeschreibung}}</strong></p>
+
+				<p>{{PROJECT.Langbeschreibung}}</p>
+				<br />
+			</div>
+			<div class="col-5 ">
+				<div class="screenshot-container">
+					<img class="screenshot" alt="Bildschirmfoto" src="https://raw.githubusercontent.com/od-ms/digifarm-ms/main/images/small/{{PROJECT.Vorschaubild}}" />				</div>
+				</div>
+				<br /><br />
+		</div>
+		<div class="row">
+			<div class="col-12 top-line">
+				<div class="teaser">
+				<div class="row">
+				<div class="col-12 col-md-4">
+
+					<div class="text text-bg-light">
+					<h3>Inhalte</h3>
+
+					<p>{{PROJECT["Benötigte Hilfe Inhalte"]}}</p>
+
+					{% if PROJECT.Inhalt %}
+						<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Inhalt)}}</p>
+					{% else %}
+						<span class="badge" style="background-color:#aa5">Hilfe für die Inhalte gesucht!</span>
+					{% endif %}
+
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+				<div class="text text-bg-light">
+					<h3>Technik</h3>
+
+					<p>{{PROJECT["Benötigte Hilfe Technik"]}}</p>
+
+					{% if PROJECT.Technik %}
+						<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Technik)}}</p>
+					{% else %}
+						<span class="badge" style="background-color:#aa5">Technik-Hilfe gesucht!</span>
+					{% endif %}
+
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="text text-bg-light">
+						<h3>Sponsor</h3>
+
+						<p>{{PROJECT["Benötigtes Sponsoring"]}}</p>
+
+						{% if PROJECT.Sponsor %}
+							<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Sponsor)}}</p>
+						{% else %}
+							<span class="badge" style="background-color:#aa5">Sponsoring gesucht!</span>
+						{% endif %}
+
+					</div>
+				</div>
+				<hr />
+
+				<!-- p><a class="btn btn-green internal-link" href="https://www.stadt-muenster.de/digifarm/mitmachen">Hier klicken, um bei diesem Projekt mitzuhelfen</a></p -->
+
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-6">
+
+				<h3>Allgemeine Informationen</h3>
+
+				<table class="table table-success table-striped">
+					<tbody>
+						<tr>
+							<td>Projekt-URL:</td>
+							<td><a href="{{PROJECT["Projekt-Url"]}}">{{PROJECT["Projekt-Url"]}}</a></td>
+						</tr>
+						<tr>
+							<td>Kategorie:</td>
+							<td><span class="badge" style="background-color:#aa5">{{PROJECT.Kategorie}}</span></td>
+						</tr>
+						<tr>
+							<td>Typ:</td>
+							<td>{{PROJECT.Typ}}</td>
+						</tr>
+						<tr>
+							<td>Entstanden in:</td>
+							<td>{{PROJECT.Ursprung}}</td>
+						</tr>
+						<tr>
+							<td>Projektstart:</td>
+							<td>{{PROJECT.Projektstart}}</td>
+						</tr>
+						<tr>
+							<td>Projektquelle:</td>
+							<td>{{PROJECT.Quelle}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-6">
+
+
+
+				<h3>Technische Daten</h3>
+
+				<table class="table table-primary table-striped">
+					<tbody>
+						<tr>
+							<td>Komplexität:</td>
+							<td>{{PROJECT["Komplexität"]}}</td>
+						</tr>
+						<tr>
+							<td>Technologie(n):</td>
+							<td>{{PROJECT["Technologien"]}}</td>
+						</tr>
+				{% if PROJECT["Weitere Infos"] %}
+						<tr>
+							<td>Weitere Infos:</td>
+							<td>{{PROJECT["Weitere Infos"]}}</td>
+						</tr>
+				{% endif %}
+						<tr>
+							<td>Deployment:</td>
+							<td>{{PROJECT["Deployment"]}}</td>
+						</tr>
+				{% if PROJECT.Infoseite %}
+						<tr>
+							<td>Infoseite:</td>
+							<td><a href="{{PROJECT["Infoseite"]}}">{{PROJECT["Infoseite"]}}</a></td>
+						</tr>
+				{% endif %}
+						<tr>
+							<td>Kollaborationsplattform:</td>
+							<td>{{PROJECT["Kollaborationsplattform"]}}</td>
+						</tr>
+						<tr>
+							<td>Quellcode-URL:</td>
+							<td><a href="{{PROJECT["Quellcode"]}}">{{PROJECT["Quellcode"]}}</a></td>
+						</tr>
+						<tr>
+							<td>Quellcode-Lizenz:</td>
+							<td>{{PROJECT.Lizenz}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+	</div>
+	</div>
+</body></html>

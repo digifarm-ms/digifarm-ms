@@ -98,6 +98,7 @@ def renderJinjaTemplate(directory, template_name, **kwargs):
 def writeProjectDetails(projects):
     LOGGER.info("===========================> Writing project detail pages")
     htmlpath = '../html/'
+    steckbriefpath = '../steckbriefe/'
     try:
         os.mkdir(htmlpath)
     except OSError as error:
@@ -118,10 +119,19 @@ def writeProjectDetails(projects):
             "SLUG": projectSlug,
             "renderPersonInsideJinja": renderPersonInsideJinja
         }
-        html = renderJinjaTemplate("", "template-details-html.jinja2", **templateData)
 
+        # write internal-vorlage-html
+        html = renderJinjaTemplate("", "template-details-html.jinja2", **templateData)
         with open(htmlpath + projectFilename, 'w') as outfile:
             outfile.write(html)
+
+        # write steckbrief html
+        if project["Filter"] == "DFMS":
+            html2 = renderJinjaTemplate("", "template-steckbrief.jinja2", **templateData)
+            with open(steckbriefpath + projectFilename, 'w') as outfile:
+                outfile.write(html2)
+
+
 
 
 def writeMarkdownFiles(projects):
