@@ -1,0 +1,185 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Digifarm.ms - Meine Stadt Transparent</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<style>
+	body {margin-top:20px;}
+	img.screenshot {width:100%}
+	table {    height: 80%; }
+	.screenshot-container {height:220px;position:relative;overflow:hidden }
+	.screenshot-container:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 4em;
+	}
+	.text{height:100%;padding: 10px;}
+	.top-line {border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;margin-bottom:20px;}
+	.teaser {max-height: 300px;overflow: hidden;}
+	.teaser img {max-width:60%}
+	.projectdesc { height: 155px;  overflow: scroll;  display: block;  margin-bottom: 10px;  text-overflow: ellipsis;}
+	.good {background:url(img/technologist.png);}
+	.bad {background:url(img/silhouette.png);}
+	.good, .bad {display:block;margin-right:10px;width:60px;height:60px;float:left;background-repeat: no-repeat;  background-size: 100% 100%;}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-7">
+
+				<h2>Meine Stadt Transparent</h2>
+				<p><strong>Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlichen Weboberfläche und einer mächtigen Suche, die auch in einer großen Zahl an Rats-Dokumenten eine effektive Recherche ermöglicht.</strong></p>
+
+				<p></p>
+				<br />
+			</div>
+			<div class="col-5 ">
+				<div class="screenshot-container">
+					<img class="screenshot" alt="Bildschirmfoto" src="https://raw.githubusercontent.com/od-ms/digifarm-ms/main/images/small/meine-stadt-transparent.png" />				</div>
+				</div>
+				<br /><br />
+		</div>
+		<div class="row">
+			<div class="col-12 top-line">
+				<div class="teaser">
+					<div class="row">
+						<div class="col-12 col-md-4">
+
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
+								<h3>Inhalte</h3>
+
+								<span class="projectdesc">Die Inhalte aktualisieren sich automatisch aus dem Ratsinformationssystem. Derzeit bestehen allerdings noch Schnittstellenprobleme mit der sogenannten "OParl-Schnittstelle". Die Klärung der Probleme zusammen mit dem Hersteller und der Stadtverwaltung Münster sind im Gange</span>
+
+								
+									<span class="good"></span>
+									<p><span class="badge bg-success">Unterstützt durch:</span> <br /><b>Amt für Bürger- und Ratsservice // citeq</b></p>
+								
+
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
+
+								<h3>Technik</h3>
+
+								<span class="projectdesc">Dieses Projekt besitzt eine relativ komplexe technische Infrastruktur, die auf dem Zusammenspiel verschiedener virtueller Container basiert. Als Administrator für dieses Projekt sollte man Interesse an Containertechnologien haben (Docker, Kubernetes, etc).</span>
+
+								
+									<span class="good"></span>
+									<p><span class="badge bg-success">Unterstützt durch:</span>  <br /><b><a href="https://github.com/ubergesundheit" target="_blank">@ubergesundheit</a></b></p>
+								
+
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
+
+								<h3>Sponsor</h3>
+
+								<span class="projectdesc">Für die Finanzierung einer eigenen Instanz von Meine Stadt Transparent für Münster werden noch Sponsoren gesucht, die die Serverkosten von wenigen hundert Euro pro Jahr tragen können, oder Zugang zu entsprechender Infrastruktur geben können, z.B. in Form von Gutscheinen für Cloud-Nutzung.</span>
+
+								
+									<span class="bad"></span>
+									<span class="badge bg-danger" >Sponsoring gesucht!</span>
+								
+
+							</div>
+						</div>
+
+				<!-- p><a class="btn btn-green internal-link" href="https://www.stadt-muenster.de/digifarm/mitmachen">Hier klicken, um bei diesem Projekt mitzuhelfen</a></p -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-5">
+
+				<h3>Allgemeine Informationen</h3>
+
+				<table class="table table-success table-striped">
+					<tbody>
+						<tr>
+							<td>Projekt-URL:</td>
+							<td><a href="https://meine-stadt-transparent.de/">https://meine-stadt-transparent.de/</a></td>
+						</tr>
+						<tr>
+							<td>Kategorie:</td>
+							<td><span class="badge bg-primary" >Politik</span></td>
+						</tr>
+						<tr>
+							<td>Typ:</td>
+							<td>Dynamische Webseite</td>
+						</tr>
+						<tr>
+							<td>Entstanden in:</td>
+							<td>München?</td>
+						</tr>
+						<tr>
+							<td>Projektstart:</td>
+							<td>2017</td>
+						</tr>
+						<tr>
+							<td>Projektquelle:</td>
+							<td>CodeForGermany</td>
+						</tr>
+						<tr>
+							<td>Status:</td>
+							<td>🛑 In Progress</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+			</div>
+			<div class="col-7">
+
+
+
+				<h3>Technische Daten</h3>
+
+				<table class="table table-primary table-striped">
+					<tbody>
+						<tr>
+							<td>Komplexität:</td>
+							<td>hoch</td>
+						</tr>
+						<tr>
+							<td>Technologie(n):</td>
+							<td>Python, NodeJS, Datenbank (z.B. MariaDB), minio, Elasticsearch</td>
+						</tr>
+				
+						<tr>
+							<td>Deployment:</td>
+							<td>Jede Stadt einzeln</td>
+						</tr>
+				
+						<tr>
+							<td>Kollaborationsplattform:</td>
+							<td>Github.com</td>
+						</tr>
+						<tr>
+							<td>Quellcode-URL:</td>
+							<td><a href="https://github.com/meine-stadt-transparent/meine-stadt-transparent/">https://github.com/meine-stadt-transparent/meine-stadt-transparent/</a></td>
+						</tr>
+						<tr>
+							<td>Quellcode-Lizenz:</td>
+							<td>MIT license </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+	</div>
+	</div>
+</body></html>
