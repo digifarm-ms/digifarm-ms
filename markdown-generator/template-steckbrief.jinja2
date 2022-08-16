@@ -8,8 +8,14 @@
 	img.screenshot {width:100%}
 	table {    height: 80%; }
 	.screenshot-container {height:200px;overflow:hidden}
-	.text{height:100%}
-	.top-line {border-top: 1px solid #bbb;}
+	.text{height:100%;padding: 10px;}
+	.top-line {border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;margin-bottom:10px;}
+	.teaser {max-height: 300px;overflow: hidden;}
+	.teaser img {max-width:80%}
+	.projectdesc {  max-height: 150px;  overflow: scroll;  display: block;  margin-bottom: 10px;  text-overflow: ellipsis;}
+	.good {background:url(img/technologist.png);}
+	.bad {background:url(img/silhouette.png);}
+	.good, .bad {display:block;margin-right:10px;width:60px;height:60px;float:left;background-repeat: no-repeat;  background-size: 100% 100%;}
 	</style>
 </head>
 <body>
@@ -34,61 +40,66 @@
 		<div class="row">
 			<div class="col-12 top-line">
 				<div class="teaser">
-				<div class="row">
-				<div class="col-12 col-md-4">
+					<div class="row">
+						<div class="col-12 col-md-4">
 
-					<div class="text text-bg-light">
-					<h3>Inhalte</h3>
+							<div class="text text-bg-light">
+								<h3>Inhalte</h3>
 
-					<p>{{PROJECT["Benötigte Hilfe Inhalte"]}}</p>
+								<span class="projectdesc">{{PROJECT["Benötigte Hilfe Inhalte"]}}</span>
 
-					{% if PROJECT.Inhalt %}
-						<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Inhalt)}}</p>
-					{% else %}
-						<span class="badge" style="background-color:#aa5">Hilfe für die Inhalte gesucht!</span>
-					{% endif %}
+								{% if PROJECT.Inhalt %}
+									<span class="good"></span>
+									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Inhalt)}}</p>
+								{% else %}
+									<span class="bad"></span>
+									<span class="badge" style="background-color:#aa5">Hilfe für die Inhalte gesucht!</span>
+								{% endif %}
 
-					</div>
-				</div>
-				<div class="col-12 col-md-4">
-				<div class="text text-bg-light">
-					<h3>Technik</h3>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="text text-bg-light">
+								<h3>Technik</h3>
 
-					<p>{{PROJECT["Benötigte Hilfe Technik"]}}</p>
+								<span class="projectdesc">{{PROJECT["Benötigte Hilfe Technik"]}}</span>
 
-					{% if PROJECT.Technik %}
-						<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Technik)}}</p>
-					{% else %}
-						<span class="badge" style="background-color:#aa5">Technik-Hilfe gesucht!</span>
-					{% endif %}
+								{% if PROJECT.Technik %}
+									<span class="good"></span>
+									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Technik)}}</p>
+								{% else %}
+									<span class="bad"></span>
+									<span class="badge" style="background-color:#aa5">Technik-Hilfe gesucht!</span>
+								{% endif %}
 
-					</div>
-				</div>
-				<div class="col-12 col-md-4">
-					<div class="text text-bg-light">
-						<h3>Sponsor</h3>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="text text-bg-light">
+								<h3>Sponsor</h3>
 
-						<p>{{PROJECT["Benötigtes Sponsoring"]}}</p>
+								<span class="projectdesc">{{PROJECT["Benötigtes Sponsoring"]}}</span>
 
-						{% if PROJECT.Sponsor %}
-							<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Sponsor)}}</p>
-						{% else %}
-							<span class="badge" style="background-color:#aa5">Sponsoring gesucht!</span>
-						{% endif %}
+								{% if PROJECT.Sponsor %}
+									<span class="good"></span>
+									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Sponsor)}}</p>
+								{% else %}
+									<span class="bad"></span>
+									<span class="badge" style="background-color:#aa5">Sponsoring gesucht!</span>
+								{% endif %}
 
-					</div>
-				</div>
-				<hr />
+							</div>
+						</div>
 
 				<!-- p><a class="btn btn-green internal-link" href="https://www.stadt-muenster.de/digifarm/mitmachen">Hier klicken, um bei diesem Projekt mitzuhelfen</a></p -->
 
-				</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 
-			<div class="col-6">
+			<div class="col-5">
 
 				<h3>Allgemeine Informationen</h3>
 
@@ -121,7 +132,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="col-6">
+			<div class="col-7">
 
 
 
