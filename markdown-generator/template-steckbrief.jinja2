@@ -7,12 +7,23 @@
 	body {margin-top:20px;}
 	img.screenshot {width:100%}
 	table {    height: 80%; }
-	.screenshot-container {height:200px;overflow:hidden}
+	.screenshot-container {height:220px;position:relative;overflow:hidden }
+	.screenshot-container:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 4em;
+	}
 	.text{height:100%;padding: 10px;}
-	.top-line {border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;margin-bottom:10px;}
+	.top-line {border-top: 1px solid #bbb;border-bottom: 1px solid #bbb;margin-bottom:20px;}
 	.teaser {max-height: 300px;overflow: hidden;}
-	.teaser img {max-width:80%}
-	.projectdesc {  max-height: 150px;  overflow: scroll;  display: block;  margin-bottom: 10px;  text-overflow: ellipsis;}
+	.teaser img {max-width:60%}
+	.projectdesc { height: 155px;  overflow: scroll;  display: block;  margin-bottom: 10px;  text-overflow: ellipsis;}
 	.good {background:url(img/technologist.png);}
 	.bad {background:url(img/silhouette.png);}
 	.good, .bad {display:block;margin-right:10px;width:60px;height:60px;float:left;background-repeat: no-repeat;  background-size: 100% 100%;}
@@ -43,49 +54,51 @@
 					<div class="row">
 						<div class="col-12 col-md-4">
 
-							<div class="text text-bg-light">
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
 								<h3>Inhalte</h3>
 
 								<span class="projectdesc">{{PROJECT["Benötigte Hilfe Inhalte"]}}</span>
 
 								{% if PROJECT.Inhalt %}
 									<span class="good"></span>
-									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Inhalt)}}</p>
+									<p><span class="badge bg-success">Unterstützt durch:</span> <br /><b>{{renderPersonInsideJinja(PROJECT.Inhalt)}}</b></p>
 								{% else %}
 									<span class="bad"></span>
-									<span class="badge" style="background-color:#aa5">Hilfe für die Inhalte gesucht!</span>
+									<span class="badge bg-danger" >Hilfe für die Inhalte gesucht!</span>
 								{% endif %}
 
 							</div>
 						</div>
 						<div class="col-12 col-md-4">
-							<div class="text text-bg-light">
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
+
 								<h3>Technik</h3>
 
 								<span class="projectdesc">{{PROJECT["Benötigte Hilfe Technik"]}}</span>
 
 								{% if PROJECT.Technik %}
 									<span class="good"></span>
-									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Technik)}}</p>
+									<p><span class="badge bg-success">Unterstützt durch:</span>  <br /><b>{{renderPersonInsideJinja(PROJECT.Technik)}}</b></p>
 								{% else %}
 									<span class="bad"></span>
-									<span class="badge" style="background-color:#aa5">Technik-Hilfe gesucht!</span>
+									<span class="badge bg-danger" >Technik-Hilfe gesucht!</span>
 								{% endif %}
 
 							</div>
 						</div>
 						<div class="col-12 col-md-4">
-							<div class="text text-bg-light">
+							<div class="text text-dark text-bg-secondary" style="--bs-bg-opacity: .1;">
+
 								<h3>Sponsor</h3>
 
 								<span class="projectdesc">{{PROJECT["Benötigtes Sponsoring"]}}</span>
 
 								{% if PROJECT.Sponsor %}
 									<span class="good"></span>
-									<p>Unterstützt durch: <br />{{renderPersonInsideJinja(PROJECT.Sponsor)}}</p>
+									<p><span class="badge bg-success">Unterstützt durch:</span>  <br /><b>{{renderPersonInsideJinja(PROJECT.Sponsor)}}</b></p>
 								{% else %}
 									<span class="bad"></span>
-									<span class="badge" style="background-color:#aa5">Sponsoring gesucht!</span>
+									<span class="badge bg-danger" >Sponsoring gesucht!</span>
 								{% endif %}
 
 							</div>
@@ -111,7 +124,7 @@
 						</tr>
 						<tr>
 							<td>Kategorie:</td>
-							<td><span class="badge" style="background-color:#aa5">{{PROJECT.Kategorie}}</span></td>
+							<td><span class="badge bg-primary" >{{PROJECT.Kategorie}}</span></td>
 						</tr>
 						<tr>
 							<td>Typ:</td>
@@ -129,6 +142,12 @@
 							<td>Projektquelle:</td>
 							<td>{{PROJECT.Quelle}}</td>
 						</tr>
+						<tr>
+							<td>Status:</td>
+							<td>{% if PROJECT.Status =="Live"%}🟢{% else %}🛑{% endif %} {{PROJECT.Status}}</td>
+						</tr>
+
+
 					</tbody>
 				</table>
 			</div>

@@ -48,6 +48,10 @@
 			<td>Projektquelle:</td>
 			<td>{{PROJECT.Quelle}}</td>
 		</tr>
+		<tr>
+			<td>Status:</td>
+			<td>{% if PROJECT.Status =="Live"%}🟢{% else %}🛑{% endif %} {{PROJECT.Status}}</td>
+		</tr>
 	</tbody>
 </table>
 
