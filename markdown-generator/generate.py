@@ -53,6 +53,10 @@ def readCsvProjectList():
         LOGGER.info("Found columns: %s", row.keys())
 
       if ("Name" in row) and row["Name"]:
+        row["SLUG"] = ""
+        if ("Vorschaubild" in row and row["Vorschaubild"]):
+            row["SLUG"] = row["Vorschaubild"].split('.')[0]
+
         if ("Filter" in row) and ((row["Filter"] == "DF") or (row["Filter"] == "DFMS")):
           projects.append(row)
           LOGGER.info("Adding row %s: %s (%s)", row_nr, row["Name"], row["Filter"])
@@ -74,6 +78,7 @@ def readCsvProjectList():
   projects.sort(key=lambda x: x["Name"])
 
   return projects
+
 
 def renderPersonInsideJinja(name):
     personString = name
@@ -106,9 +111,9 @@ def writeProjectDetails(projects):
 
     for project in projects:
 
-        projectSlug = project["Vorschaubild"].split('.')[0]
+        projectSlug = project["SLUG"]
         if not projectSlug:
-            LOGGER.warning("No Vorschaubild! Skipping: %s", project["Name"])
+            LOGGER.warning("No Slug! Skipping: %s", project["Name"])
             continue
 
         LOGGER.info("Project %s", projectSlug)
@@ -116,7 +121,6 @@ def writeProjectDetails(projects):
         templateData = {
             "DATE": datetime.today().strftime('%Y-%m-%d'),
             "PROJECT": project,
-            "SLUG": projectSlug,
             "renderPersonInsideJinja": renderPersonInsideJinja
         }
 
@@ -132,6 +136,10 @@ def writeProjectDetails(projects):
                 outfile.write(html2)
 
 
+def writeSteckbriefIndex(projects):
+    with open('../steckbriefe/index.html', 'w') as outfile:
+        outfile.write(renderJinjaTemplate("", "template-steckbrief-index.jinja2",
+            DATE= datetime.today().strftime('%Y-%m-%d'), PROJECTS=projects))
 
 
 def writeMarkdownFiles(projects):
@@ -258,6 +266,7 @@ def writeJsonProjectListForSearchIframe(projects):
 
 PROJECTS = readCsvProjectList()
 writeMarkdownFiles(PROJECTS)
+writeSteckbriefIndex(PROJECTS)
 writeProjectDetails(PROJECTS)
 writeJsonProjectListForSearchIframe(PROJECTS)
 
