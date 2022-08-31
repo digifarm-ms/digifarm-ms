@@ -32,10 +32,14 @@ A/B-Street kann das städtische Straßensystem samt Verkehr simulieren. Es soll 
 
 | Projekt-Ursprung:   | London / DemocracyLab (2018) |
 | :------------- |:-------------|
-| Technologien: | interaktive Webseite mit RUST, Cargo, OSM |
+| Technologien: | Dynamische Webseite mit RUST, Cargo, OSM |
 | Kategorie & Lizenz:   | Mobilität / Apache-2.0 license |
 | Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Deployment für Münster |
+| Benötigte Hilfe:  | Die Open-Source-Anwendung "AB Street" müsste für Münster auf einem Server installiert werden, und dann müsste ein Datenimport von Open-Street-Maps durchgeführt werden. Es besteht Kontakt zu einer Person, die das schonmal ausprobiert, dann aber aus Zeitmangel nicht fortgeführt hat.
+
+Einige Informationen wurden in diesem Twitter-Thread gesammelt: https://mobile.twitter.com/codeformuenster/status/1336421089153609728
+
+Weitere Informationen gibt es in einem Github-Issue bei AB-Street: https://github.com/a-b-street/abstreet/issues/411 |
 | Quellcode:   | https://github.com/a-b-street/abstreet |
 
 
@@ -89,10 +93,10 @@ Das Münster "Zahlen-Quiz" - Ein Münsterhack-Teilnehmer-Team hat dieses kurzwei
 
 | Projekt-Ursprung:   | Münster / Münsterhack (10/2021) |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit Flutter |
+| Technologien: | Webseite (statisch) mit Flutter, Dart |
 | Kategorie & Lizenz:   | Unterhaltung / MIT License|
-| Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Weitere Quizfragen eingeben bzw. einbauen |
+| Status:   |  :heavy_check_mark:   Live / Unterstützt von Gitlab |
+| Benötigte Hilfe:  | Basierend auf dem Flutter-Framework kann "Data Inspire Me" sowohl als Webseite als auch als App für Smartphones veröffentlicht werden. Bisher wurde es als Webseite veröffentlicht, und man könnte ein App-Deployment versuchen. Außerdem gibt es bereits einige Ideen für Weiterentwicklungen, die in Gitlab-Issues festgehalten wurden. Wenn keine Ambitionen zu einer Weiterentwicklung bestehen, dann ist das Projekt recht pflegeleicht, da es als statische Webseite mit Gitlab Pages gehostet wird.  |
 | Quellcode:   | https://gitlab.com/data-inspire-me/data-inspire-me |
 
 
@@ -140,6 +144,25 @@ Eine Android-App um Programmpläne für große Veranstaltungen bereitzustellen �
 
 ----------------------
 
+## Fair City Guide Münster
+
+Übersicht über Cafés, Restaurants und Shops, die einen besonderen Schwerpunkt auf nachhaltige Aspekte legen. 
+
+| Projekt-Ursprung:   | Münster / Münster Fair (05/2021) |
+| :------------- |:-------------|
+| Technologien: | App mit React, React native, Expo, Java Spring, Appstores |
+| Kategorie & Lizenz:   | Freizeit / GPL v3|
+| Status:   |  :heavy_check_mark:   Live |
+| Benötigte Hilfe:  | Es handelt sich um eine Cross-Platform-App, die mit Flutter entwickelt wurde, und die in den App-Stores von Apple und Google verfügbar ist. Der Backend-Server basiert auf Java Spring Boot Framework. Die technische Unterstützung ist relativ einfach gemacht: Den Server regelmäßig zu warten (Linux Updates einspielen, etc). Für die Wartung der Flutter App wird ebenfalls jemand gesucht, aber dies ist nicht so wichtig, da nicht so oft Sicherheitsupdates eingespielt werden müssen. |
+| Quellcode:   | https://gitlab.com/timohaase/ftg-frontend |
+
+
+<img src="images/small/muensters-fair.jpg" />
+
+
+
+----------------------
+
 ## Geoserver "Masterportal"
 
 In der Freien und Hansestadt Hamburg kommt es immer dann zum Einsatz, wenn webbasierte Kartenanwendungen benötigt werden – als eigenständige Anwendung oder als Teil einer E-Government-Lösung. Auch in anderen Städten und Kreisen wird das Masterportal eingesetzt. Das Masterportal ist Open-Source-Software.
@@ -161,14 +184,14 @@ In der Freien und Hansestadt Hamburg kommt es immer dann zum Einsatz, wenn webba
 
 ## Gieß den Kiez
 
-Auf dieser Plattform kannst Du Dich über Bäume in Deiner Nachbarschaft und ihren Wasserbedarf informieren. Du kannst einzelne Bäume adoptieren und markieren, wenn Du sie gegossen hast.
+Auf dieser Plattform kannst Du Dich über Bäume in Deiner Nachbarschaft und ihren Wasserbedarf informieren. Du kannst einzelne Bäume "adoptieren" und markieren, wenn Du sie gegossen hast.
 
 | Projekt-Ursprung:   | Berlin / Citylab Berlin (05/2020) |
 | :------------- |:-------------|
-| Technologien: | Webseite (dynamisch) mit AWS, Docker PostgresDB + Postgis, Vercel.com, Auth0.com, Mapbox, Appstores |
+| Technologien: | Dynamische Webseite mit AWS, Docker, PostgresDB, PostGIS, Mapbox, Appstores |
 | Kategorie & Lizenz:   | Umwelt / MIT License |
-| Status:   |  :heavy_check_mark:   Live |
-| Benötigte Hilfe:  | Für Münster deployen |
+| Status:   |  :x:   noch nicht für Münster verfügbar / Unterstützt von Stadtbaumfreunde e.V. |
+| Benötigte Hilfe:  | Der Verein Stadtbaumfreunde e.V. sucht Menschen, die die Open-Source-Anwendung "Gieß den Kiez" für Münster installieren und betreiben können. Kontakt zu den Gieß-Den-Kiez-InitiatorInnen aus Berlin besteht, um technische Fragen zu klären und Unterstützung zu erhalten.  |
 | Quellcode:   | https://github.com/technologiestiftung/giessdenkiez-de |
 
 
@@ -203,7 +226,7 @@ Informationen über Kitas (Kindertagesstätten) in Berlin werden per explorative
 
 | Projekt-Ursprung:   | Berlin / CodeForGermany (09/2020) |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit Python, Juypter Notebook |
+| Technologien: | Webseite (statisch) mit Python, Jupyter Notebook |
 | Kategorie & Lizenz:   | Familie / MIT License |
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Für Münster umsetzen |
@@ -218,14 +241,14 @@ Informationen über Kitas (Kindertagesstätten) in Berlin werden per explorative
 
 ## Klimaheroes
 
-KlimaHeroes hilft dir, dein Verhalten spielerisch klimafreundlicher zu gestalten. Wir motivieren dich, deine Gewohnheiten innerhalb einer regionalen Community zu verändern, angepasst an deine ganz persönliche Lebenswelt.
+KlimaHeroes hilft dir, dein Verhalten spielerisch klimafreundlicher zu gestalten. Die App soll Dich motivieren, Deine Gewohnheiten zu verändern, angepasst an deine ganz persönliche Lebenswelt.
 
 | Projekt-Ursprung:   | Münster / Münsterhack (09/2021) |
 | :------------- |:-------------|
-| Technologien: | App mit React native & Expo  (Frontend) bzw. Typescript (Backend) |
+| Technologien: | App mit React, React native, Expo, Typescript, Node.JS |
 | Kategorie & Lizenz:   | Umwelt / --|
 | Status:   |  :x:   unfertig |
-| Benötigte Hilfe:  | KlimaHeroes programmiertechnisch auf dem Weg zur v1.0 unterstützen |
+| Benötigte Hilfe:  | KlimaHeroes suchen nach Menschen, die sie programmiertechnisch auf dem Weg zur App-Version v1.0 unterstützen können. |
 | Quellcode:   | https://github.com/KlimaHeroes |
 
 
@@ -279,32 +302,14 @@ Prototyp eines neuen Ratsinformationssystems mit einer einer leicht verständlic
 
 | Projekt-Ursprung:   | München? / CodeForGermany (2017) |
 | :------------- |:-------------|
-| Technologien: | Dynamische Webseite mit Python, NodeJS, Datenbank (z.B. MariaDB), minio, Elasticsearch |
+| Technologien: | Dynamische Webseite mit Python, Node.JS, Relationale Datenbank, minio, Elasticsearch |
 | Kategorie & Lizenz:   | Politik / MIT license |
-| Status:   |  :x:   In Progress |
-| Benötigte Hilfe:  | Schnittstellenprobleme OParl Münster beheben |
+| Status:   |  :x:   Probleme bei Datenanbindung |
+| Benötigte Hilfe:  | Dieses Projekt besitzt eine relativ komplexe technische Infrastruktur, die auf dem Zusammenspiel verschiedener virtueller Container basiert. Als Administrator für dieses Projekt sollte man Interesse an Containertechnologien haben (Docker, Kubernetes, etc). |
 | Quellcode:   | https://github.com/meine-stadt-transparent/meine-stadt-transparent/ |
 
 
 <img src="images/small/meine-stadt-transparent.png" />
-
-
-
-----------------------
-
-## Münster Fair
-
-Übersicht über Cafés, Restaurants und Shops, die einen besonderen Schwerpunkt auf nachhaltige Aspekte legen. 
-
-| Projekt-Ursprung:   | Münster / CodeForGermany () |
-| :------------- |:-------------|
-| Technologien: | App mit React native & Expo (Frontend) bzw. Java Spring (Backend) |
-| Kategorie & Lizenz:   | Freizeit / |
-| Status:   |  :heavy_check_mark:   Live / Unterstützt von Privatpersonen aus Münster |
-| Quellcode:   |  |
-
-
-<img src="images/small/muensters-fair.jpg" />
 
 
 
@@ -369,9 +374,9 @@ Interaktiver Rats-Sitzplan für's Handy. Nützlich z.B. wenn man zu einer Ratssi
 
 | Projekt-Ursprung:   | Münster / CodeForGermany (12/2018) |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit Python, Django, Bootstrap, Jinja, JSON API "OParl" des Ratsinformationssystems |
+| Technologien: | Webseite (statisch) mit Python, Django, Bootstrap CSS, Jinja, JSON API, HTML, CSS |
 | Kategorie & Lizenz:   | Politik / Apache License 2.0|
-| Status:   |  :heavy_check_mark:   Live / Unterstützt von Open Data Münster |
+| Status:   |  :heavy_check_mark:   Live / Unterstützt von Github |
 | Benötigte Hilfe:  | Dieses Projekt wird kostenlos auf Github-Pages gehostet. Nur wenn sich der Rats-Sitzplan ändert, muss die HTML-Seite aktualisiert werden, indem das Python-Skript gestartet und die automatisch erzeugte HTML-Datei im GIT-Repository eingecheckt wird. |
 | Quellcode:   | https://github.com/codeformuenster/sitzplan-rat |
 
@@ -386,12 +391,12 @@ Interaktiver Rats-Sitzplan für's Handy. Nützlich z.B. wenn man zu einer Ratssi
 
 Die Idee vom Stadtarchiv, Beiträge des Schüler-Geschichtswettbewerb durch- suchbar zu machen, wurde beim Münsterhack & in einer Bachelorarbeit umgesetzt.
 
-| Projekt-Ursprung:   | Münster / CodeForGermany (09/2020) |
+| Projekt-Ursprung:   | Münster / Münsterhack (09/2020) |
 | :------------- |:-------------|
-| Technologien: | Dynamische Webseite mit Python, HTML, CSS |
+| Technologien: | Dynamische Webseite mit Python, HTML, CSS, Relationale Datenbank |
 | Kategorie & Lizenz:   | Bildung / GPL v3|
 | Status:   |  :heavy_check_mark:   Live / Unterstützt von Stadtarchiv Münster |
-| Benötigte Hilfe:  | Wartung & Pflege |
+| Benötigte Hilfe:  | Dieses auf Python und einer Mysql-Datenbank basierende Projekt läuft auf einem V-Server, und ab und zu müssen die Server-Sicherheitsupdates eingespielt werden. |
 | Quellcode:   | https://github.com/codeformuenster/schueler-geschichtswettbewerb-muenster |
 
 
@@ -539,7 +544,7 @@ Das Projekt möchte zeigen, wann und wo Märkte stattfinden und damit eine Orien
 
 | Projekt-Ursprung:   | Leipzig / CodeForGermany () |
 | :------------- |:-------------|
-| Technologien: | Webseite (statisch) mit HTML, CSS, Node.js, Python |
+| Technologien: | Webseite (statisch) mit HTML, CSS, Node.JS, Python |
 | Kategorie & Lizenz:   | Gesundheit / |
 | Status:   |  :heavy_check_mark:   Live |
 | Benötigte Hilfe:  | Daten recherchieren und für Münster deployen |
