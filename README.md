@@ -30,6 +30,10 @@ Für Menschen, die sich beteiligen möchten und sich einen Überblick verschaffe
 * Schau bei unseren Einsteiger-Aufgaben, ob etwas für Dich dabei ist: https://github.com/users/od-ms/projects/3/views/2
 * Oder such' Dir ein Projekt aus, das Du unterstützen möchtest: https://www.stadt-muenster.de/digifarm/projekte/
 * Dann nimm Kontakt mit uns auf (siehe nächste Überschrift)
+  * Je nach Projekt und Deinen Interessen kann es dann unterschiedlich weiter gehen, z.B. 
+  * wir stellen den Kontakt mit den Projektinitiatoren her
+  * wir vereinbaren, wie die Server-Administration ablaufen kann
+  * wir unterstützen Dich beim Einstieg in das Projekt
 * Oder wenn Du Dich schon auf Github und Gitlab auskennst kannst Du auch direkt in die Quellcodes der Projekte klicken, und dort bei den "Issues" gucken ob Du etwas findest, und dann ggf. Pull-Requests stellen.  
 
 
