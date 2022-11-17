@@ -6,8 +6,9 @@
 
 DIGIFARM.MS möchte Open-Source-Projekten, die aus bürgerschaftlichem Engagement entstanden sind (["Civic Tech"](https://de.wikipedia.org/wiki/Civic_Technology)), mehr Sichtbarkeit verschaffen und auch bei der Weiterführung und der Umsetzung unterstützen. Dabei wollen wir uns auf nichtkommerzielle Projekte fokussieren, bei denen ein Mehrwert für die Stadtgesellschaft Münster gesehen wird. [Eine Liste der ausgewählten Projekte, die wir unterstütze möchten, befindet sich auf der DIGIFARM.MS-Homepage: https://www.stadt-muenster.de/digifarm/projekte/](https://www.stadt-muenster.de/digifarm/projekte/).
 
+Wir wollen zukünftig auch weitere Projekte aufnehmen und freuen uns über Vorschläge über unser [Mitmach-Formular (auf der verlinkten Seite unter "Projekt einreichen" in der rechten Spalte, ca. in der Mitte der Seite)](https://www.stadt-muenster.de/digifarm/mitmachen).
 
-## Warum? 
+## Warum wurde DIGIFARM.MS gestartet? 
 
 * "Open Source hat keine Lobby": Wir wollen den Open-Source-Gedanken verbreiten, d.h. Software und Apps, die als digitales Gemeingut entwickelt werden. 
 * "Ehrenamt braucht Hauptamt": Menschen, die ehrenamtlich an Open-Source-Projekten arbeiten, kommen oft an Grenzen, bei denen wir unterstützen möchten. 
@@ -16,7 +17,7 @@ DIGIFARM.MS möchte Open-Source-Projekten, die aus bürgerschaftlichem Engagemen
 
 ## Was ist konkret zu tun?
 
-Wir haben selbst keine Programmier-Kapazitäten, sondern suchen nach Individuen, Organisationen und Unternehmen, die bei der Umsetzung und Finanzierung von Civic-Tech-Projekten helfen möchen. 
+Wir haben nur geringe Programmier-Kapazitäten, und suchen daher nach Individuen, Organisationen und Unternehmen, die bei der Umsetzung und Finanzierung von Civic-Tech-Projekten helfen möchen. Sich an Open-Source-Projekten zu beteiligen kann sinnstiftend sein, Spaß machen, man lernt andere Menschen kennen und kann selbst etwas dazulernen. 
 
 Für Menschen, die sich beteiligen möchten und sich einen Überblick verschaffen wollen, wo Hilfe benötigt wird, führen wir eine Liste der offenen TODOs in einem öffentlichen Projektmanagement-Board auf Github:
 
