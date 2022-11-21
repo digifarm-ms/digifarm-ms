@@ -1,6 +1,13 @@
 # Digifarm.ms
 *In diesem Repository befinden sich die öffentlichen Informationen und Daten zum Projekt www.digifarm.ms*
 
+<br />
+<p align="center">
+  <a target="_blank" href="https://gitter.im/digifarm-ms/community"><img src="https://img.shields.io/gitter/room/digifarm-ms/community" /></a>&nbsp;
+  <a target="_blank" href="https://matrix.to/#/#digifarm-ms_community:gitter.im"><img src="https://img.shields.io/matrix/digifarm-ms_community:gitter.im?label=matrix%20chat&server_fqdn=matrix.org" /></a>&nbsp;
+  <a target="_blank" href="https://github.com/users/od-ms/projects/3/views/2"><img src="https://img.shields.io/github/issues/od-ms/digifarm-ms/einsteiger" /></a>&nbsp;
+</p>
+
 
 ## Open-Source-Projekte für Münster
 
@@ -40,7 +47,7 @@ Für Menschen, die sich beteiligen möchten und sich einen Überblick verschaffe
 ## Wie kann man in Kontakt treten?
 
 * Komm' zu einem der CodeForMünster-Treffen, dort ist fast immer ein/e DIGIFARMer/in dabei: https://www.meetup.com/code-for-munster
-* Schreib' uns im Matrix-Channel an: https://matrix.to/#/#digifarm-ms_community:gitter.im
+* Joine unseren Matrix-Channel **#digifarm-ms_community:gitter.im**, um mit uns in Kontakt zu treten. Dort posten wir auch gelegentlich aktuelle Informationen und Updates: https://matrix.to/#/#digifarm-ms_community:gitter.im
 * Telefon und Email geht auch, Informationen zu den Kontaktpersonen findest Du auf der offiziellen Kontaktseite: https://www.stadt-muenster.de/digifarm/mitmachen (dort etwas weiter runterscrollen)
 * Schreibe in diesem Github-Repo eine [Issue](https://github.com/od-ms/digifarm-ms/issues/new) oder stelle einen Pull-Request
 
